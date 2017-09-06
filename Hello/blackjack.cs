@@ -4,7 +4,7 @@
 /// </summary>
 namespace Hello
 {
-    public class blackjack
+   public class blackjack
     {
         public static void mustapekka()
         {
@@ -41,5 +41,5 @@ namespace Hello
                 }
             } while (i );
         }
-    }
+    } 
 }
