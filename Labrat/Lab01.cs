@@ -237,6 +237,12 @@ namespace Labrat
         }
         public static void Tehtava12()
         {
+            int[] luvut = new int[5];
+            for (int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Anna luku:");
+                luvut[i] = int.Parse(Console.ReadLine());
+            }
 
         }
     }
