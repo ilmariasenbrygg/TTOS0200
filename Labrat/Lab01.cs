@@ -168,7 +168,7 @@ namespace Labrat
         }
         public static void Tehtava8()
         {
-            int[] luku = new int[4];
+            int[] luku = new int[3];
             Console.Write("Anna ensimmäinen luku: ");
             luku[0] = int.Parse(Console.ReadLine());
             Console.Write("Anna toinen luku: ");
@@ -177,8 +177,67 @@ namespace Labrat
             luku[2] = int.Parse(Console.ReadLine());
             if(luku[1] > luku[0])
             {
-
+                luku[0] = luku[1];
+                if(luku[2] > luku[0])
+                {
+                    luku[0] = luku[2];
+                    Console.WriteLine("Suurin luku:" + luku[0]);
+                }
             }
+            if (luku[2] > luku[0])
+            {
+                luku[0] = luku[2];
+                Console.WriteLine("Suurin luku:" + luku[0]);
+            }
+            else
+            {
+                Console.WriteLine("Suurin luku:" + luku[0]);
+            }
+            
+        }
+        public static void Tehtava9()
+        {
+            int luvut = 0;
+            while(true)
+            {
+                Console.WriteLine("Anna luku>");
+                int i = int.Parse(Console.ReadLine());
+                luvut = luvut + i;
+                if (i == 0)
+                {
+                    break;
+                }
+            }
+            Console.WriteLine("Lukujen summa: " + luvut);
+        }
+        public static void Tehtava10()
+        {
+            int[] luvut = { 1, 2, 33, 44, 55, 68, 77, 96, 100 };
+            int j = 0;
+            for (int i = 0; i < 9;)
+            {
+                j = luvut[i] % 2;
+                if( j == 0)
+                {
+                    Console.WriteLine("HEP!");
+                }
+                i++;
+            }
+        }
+        public static void Tehtava11()
+        {
+            for (int i = 0; i < 6; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.Write("\n");
+            }
+        }
+        public static void Tehtava12()
+        {
+
         }
     }
 
