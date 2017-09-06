@@ -127,7 +127,58 @@ namespace Labrat
         }
         public static void Tehtava6()
         {
+            double kilometrit = 0;
+            double kulutus = 7.02;
+            double LitraHinta = 1.595;
+            double bensa = 0;
+            double KokoHinta = 0;
+            Console.Write("Anna kilometrit: ");
+            kilometrit = int.Parse(Console.ReadLine());
+            bensa = (kilometrit / 100) * kulutus;
+            KokoHinta = bensa * LitraHinta; 
+            Console.WriteLine("Bensaa kuluu " + bensa + " ja hintaa kertyy " + KokoHinta +" euroa");
+        }
+        public static void Tehtava7()
+        {
+            int vuosi = 0;
+            int i;
+            Console.Write("Anna vuosi: ");
+            vuosi = int.Parse(Console.ReadLine());
+            i = vuosi % 4;
+            if (i == 0)
+            {
+                i = vuosi;
+                if(i % 400 == 0)
+                {
+                    Console.WriteLine("Vuosi on karkausvuosi!");
+                }
+                i = vuosi;
+                if( i % 100 == 0)
+                {
+                    Console.WriteLine("Vuosi ei ole karkausvuosi");
+                }
+                else
+                {
+                    Console.WriteLine("Vuosi on karkausvuosi");
+                }
+            }else
+            {
+                Console.WriteLine("Vuosi ei ole karkausvuosi");
+            }
+        }
+        public static void Tehtava8()
+        {
+            int[] luku = new int[4];
+            Console.Write("Anna ensimmäinen luku: ");
+            luku[0] = int.Parse(Console.ReadLine());
+            Console.Write("Anna toinen luku: ");
+            luku[1] = int.Parse(Console.ReadLine());
+            Console.Write("Anna kolmas luku: ");
+            luku[2] = int.Parse(Console.ReadLine());
+            if(luku[1] > luku[0])
+            {
 
+            }
         }
     }
 
