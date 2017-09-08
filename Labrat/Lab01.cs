@@ -243,8 +243,168 @@ namespace Labrat
                 Console.WriteLine("Anna luku:");
                 luvut[i] = int.Parse(Console.ReadLine());
             }
-
+            Array.Reverse(luvut);
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write(luvut[i] + ", ");
+            }
+            Console.WriteLine("\n");
+        }
+        public static void Tehtava13()
+        {
+            int[] luku = new int[5];
+            Console.Write("Anna pisteet: ");
+            luku[0] = int.Parse(Console.ReadLine());
+            Console.Write("Anna pisteet: ");
+            luku[1] = int.Parse(Console.ReadLine());
+            Console.Write("Anna pisteet: ");
+            luku[2] = int.Parse(Console.ReadLine());
+            Console.Write("Anna pisteet: ");
+            luku[3] = int.Parse(Console.ReadLine());
+            Console.Write("Anna pisteet: ");
+            luku[4] = int.Parse(Console.ReadLine());
+            int j = 0;
+            int i = 0;
+            int summa = 0;
+            // käytetään muuttujia i, j , d että saadaan for loopit pyörimään oikein.
+            for (int k = 0; k < 5; k++)
+            {
+                if (luku[i] < luku[i + 1])
+                {
+                    j = luku[i + 1];
+                    luku[i + 1] = luku[i];
+                    luku[i] = j;
+                }
+                i++;
+                if (luku[i] < luku[i + 1])
+                {
+                    j = luku[i + 1];
+                    luku[i + 1] = luku[i];
+                    luku[i] = j;
+                }
+                i++;
+                if (luku[i] < luku[i + 1])
+                {
+                    j = luku[i + 1];
+                    luku[i + 1] = luku[i];
+                    luku[i] = j;
+                }
+                i++;
+                if (luku[i] < luku[i + 1])
+                {
+                    j = luku[i + 1];
+                    luku[i + 1] = luku[i];
+                    luku[i] = j;
+                }
+                i = 0;
+            }
+            for (int d = 0; d < 3; d++)
+            {
+                summa = luku[d] + summa;
+            }
+            Console.WriteLine("Kokonaispisteet>" + summa);
+        }
+        public static void Tehtava14()
+        {
+            int j;
+            int nollat = 0;
+            int ykköset = 0;
+            int kakkoset = 0;
+            int kolmoset = 0;
+            int neloset = 0;
+            int vitoset = 0;
+            Console.WriteLine("Anna opiskelijoiden määrä:");
+            j = int.Parse(Console.ReadLine());
+            int[] luvut = new int[j];
+            for (int i = 0; i < j; i++)
+            {
+                Console.WriteLine("Anna arvosana 1-5:");
+                luvut[i] = int.Parse(Console.ReadLine());
+                if (luvut[i] == 0)
+                {
+                    nollat = nollat+1;
+                }
+                if (luvut[i] == 1)
+                {
+                    ykköset = ykköset + 1;
+                }
+                if (luvut[i] == 2)
+                {
+                    kakkoset = kakkoset + 1;
+                }
+                if (luvut[i] == 3)
+                {
+                    kolmoset = kolmoset + 1;
+                }
+                if (luvut[i] == 4)
+                {
+                    neloset = neloset + 1;
+                }
+                if (luvut[i] == 5)
+                {
+                    vitoset = vitoset + 1;
+                }
+            }
+            Console.WriteLine("Arvosanat:");
+            Console.Write("0:");
+            for (int d = 0; d < nollat; d++)
+            {
+                Console.Write("*");
+            }
+            Console.Write("\n 1:");
+            for (int d = 0; d < ykköset; d++)
+            {
+                Console.Write("*");
+            }
+            Console.Write("\n 2:");
+            for (int d = 0; d < kakkoset; d++)
+            {
+                Console.Write("*");
+            }
+            Console.Write("\n 3:");
+            for (int d = 0; d < kolmoset; d++)
+            {
+                Console.Write("*");
+            }
+            Console.Write("\n 4:");
+            for (int d = 0; d < neloset; d++)
+            {
+                Console.Write("*");
+            }
+            Console.Write("\n 5:");
+            for (int d = 0; d < vitoset; d++)
+            {
+                Console.Write("*");
+            }
+            Console.Write("\n");
+        }
+        public static void Tehtava15()
+        {
+            Console.WriteLine("Anna luku, max 10:");
+            int luku = int.Parse(Console.ReadLine());
+            luku = luku - 2;
+            for (int i = 0; i < luku; i++)
+            {
+                Console.Write("*");
+                if(i == 0)
+                {
+                    Console.Write("\n ***");
+                }
+                if (i == 1)
+                {
+                    Console.Write("\n *****");
+                }
+                if (i == 2)
+                {
+                    Console.Write("\n *******");
+                }
+                if (i == 3)
+                {
+                    Console.Write("\n *********");
+                }
+            }
         }
     }
+
 
 }
