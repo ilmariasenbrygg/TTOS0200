@@ -404,6 +404,54 @@ namespace Labrat
                 }
             }
         }
+        public static void Tehtava16()
+        {
+            Random rnd = new Random();
+            int randomi = rnd.Next(1, 100);
+            int luku= 0;
+            int yritykset = 0;
+            do
+            {
+                Console.WriteLine("Anna luku:");
+                luku = int.Parse(Console.ReadLine());
+                if (luku > randomi)
+                {
+                    Console.WriteLine("Luku on pienempi");
+                    yritykset++;
+                }
+                if (luku < randomi)
+                {
+                    Console.WriteLine("Luku on suurempi");
+                    yritykset++;
+                }
+            } while (luku != randomi);
+            Console.WriteLine("Arvasit luvun oikein " + yritykset + " yrityksellä!");
+        }
+        public static void Tehtava17()
+        {
+            int[] luvut = { 10, 20, 30, 40, 50 };
+            int[] luvut2 = { 5, 15, 25, 35, 45 };
+        }
+        static class StringHelper
+        {
+            public static string ReverseString(string s)
+            {
+                char[] arr = s.ToCharArray();
+                Array.Reverse(arr);
+                return new string(arr);
+            }
+        }
+        public static void Tehtava18()
+        {
+            string merkkijono;
+            Console.WriteLine("Anna merkkijono");
+            merkkijono = Console.ReadLine();
+            string merkkijono2 = merkkijono;
+            Console.WriteLine(StringHelper.ReverseString(merkkijono));
+            string käänteinen = merkkijono;
+            Console.WriteLine(merkkijono2 + " " + käänteinen);
+            
+        }
     }
 
 
