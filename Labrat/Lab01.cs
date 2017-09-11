@@ -225,7 +225,10 @@ namespace Labrat
         }
         public static void Tehtava11()
         {
-            for (int i = 0; i < 6; i++)
+            Console.WriteLine("Anna rivienlukumäärä:");
+            int b = int.Parse(Console.ReadLine());
+            b = b + 1;
+            for (int i = 0; i < b; i++)
             {
                 for (int j = 0; j < i; j++)
                 {
@@ -450,6 +453,77 @@ namespace Labrat
             string käänteinen = merkkijono;
             Console.WriteLine(merkkijono2 + " " + käänteinen);
             
+        }
+        public static void Tehtava19()
+        {
+            string[] sana = {"h", "i", "r", "s", "i" };
+            string oikeatkirjaimet;
+            string[] väärätkirjaimet = new string[];
+            Console.WriteLine("Anna kirjain");
+            string kirjain = Console.ReadLine();
+            for (int i = 0; i < 5; i++)
+            {
+                if(sana[i] == kirjain)
+                {
+                    Console.WriteLine("Kirjain oikein!");
+                    oikeatkirjaimet = oikeatkirjaimet + kirjain;
+                }
+                else
+                {
+                    Console.WriteLine("Kirjain väärin");
+                    väärätkirjaimet = kirjain + väärätkirjaimet;
+                }
+            }
+            
+        }
+        public static void Tehtava20()
+        {
+            double kilometrit = 0;
+            double Bmwkulutus = 7.02;
+            double mopokulutus = 4.5;
+            double kauppakassikulutus = 6.0;
+            double LitraHinta = 1.595;
+            double bensa = 0;
+            double kokobensa = 0;
+            double KokoHinta = 0;
+            int ajoneuvo;
+            do
+            {
+                Console.WriteLine("Perheen bensan kulutuslaskuri.");
+                Console.WriteLine("Anna ajoneuvo(1.Mopo, 2.kauppakassi tai 3.bmw, syötä lukuna) lopeta nollalla:");
+                ajoneuvo = int.Parse(Console.ReadLine());
+                if (ajoneuvo == 1)
+                {
+                    Console.Write("Anna kilometrit: ");
+                    kilometrit = int.Parse(Console.ReadLine());
+                    bensa = (kilometrit / 100) * mopokulutus;
+                    kokobensa = bensa + kokobensa;
+                }
+                else if (ajoneuvo == 2)
+                {
+                    Console.Write("Anna kilometrit: ");
+                    kilometrit = int.Parse(Console.ReadLine());
+                    bensa = (kilometrit / 100) * kauppakassikulutus;
+                    kokobensa = bensa + kokobensa;
+                }
+                else if (ajoneuvo == 3)
+                {
+                    Console.Write("Anna kilometrit: ");
+                    kilometrit = int.Parse(Console.ReadLine());
+                    bensa = (kilometrit / 100) * Bmwkulutus;
+                    kokobensa = bensa + kokobensa;
+                }
+                else if (ajoneuvo == 0)
+                {
+                    Console.WriteLine("Lopputulos");
+                }
+                else
+                {
+                    Console.WriteLine("Syötit väärin.");
+                }
+            } while (ajoneuvo != 0);
+            KokoHinta = kokobensa * LitraHinta;
+            Console.WriteLine("Perheen kokopäivän bensan kulutus " + kokobensa + " ja hintaa kertyy " + KokoHinta + " euroa");
         }
     }
 
