@@ -147,12 +147,11 @@ namespace Labrat
             i = vuosi % 4;
             if (i == 0)
             {
-                i = vuosi;
-                if (i % 400 == 0)
+                if (vuosi % 400 == 0)
                 {
                     Console.WriteLine("Vuosi on karkausvuosi!");
                 }
-                else if (i % 100 == 0)
+                else if (vuosi % 100 == 0)
                 {
                     Console.WriteLine("Vuosi ei ole karkausvuosi");
                 }
