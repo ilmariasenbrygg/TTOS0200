@@ -467,11 +467,11 @@ namespace Labrat
                 arvaus[i] = '_';
             }
             int luku = 0;
-            Console.WriteLine("Tervetuloa hirsipuuhun"); //Toivotetaan tervetulleeksi
-            do //Siirrytään do while sisään niin kauaksi aikaa kunnes luku vastaa arvoltaan arvauksen pituutta.
+            Console.WriteLine("Tervetuloa hirsipuuhun");
+            do 
             {
                 Console.WriteLine("Anna kirjain"); 
-                char input = Console.ReadLine().ToCharArray()[0];//Lukee string ja muuttaa merkkijonoksi.
+                char input = Console.ReadLine().ToCharArray()[0];
                 for (int i = 0; i < sana.Length; i++)
                 {
                     if (sana[i] == input)
