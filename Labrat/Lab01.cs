@@ -472,12 +472,13 @@ namespace Labrat
             {
                 Console.WriteLine("Anna kirjain"); 
                 char input = Console.ReadLine().ToCharArray()[0];
+                yritykset++;
                 for (int i = 0; i < sana.Length; i++)
                 {
                     if (sana[i] == input)
                     {
                         luku++;
-                        yritykset++;
+                        
                         arvaus[i] = input;
 
                         for (int h = 0; h < arvaus.Length; h++)
