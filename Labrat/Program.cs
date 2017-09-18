@@ -12,7 +12,7 @@ namespace Labrat
     {
         static void Main(string[] args)
         {
-            Lab02.KiuasKäyttö.TestaaKiuas();
+            Lab02.TvKäyttö.Tvkäyttö();
         }
     }
 }
