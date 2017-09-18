@@ -153,5 +153,48 @@ namespace Labrat
                 }
             }
         }
+        public class Auto
+        {
+            public string Merkki { get; set; }
+            public int nopeus { get; set; }
+            public int renkaat { get; set; }
+            public Auto(string Merkki, int nopeus, int renkaat): base()
+            {
+                this.Merkki = Merkki;
+                this.nopeus = nopeus;
+                this.renkaat = renkaat;
+            }
+            public Auto()
+            {
+            }
+            public string tiedot()
+            {
+                return Merkki + " " + nopeus + "km/h " + renkaat + ".";
+            }
+        }
+        public class Autotiedot
+        {
+            public static void autotiedot()
+            {
+                Auto munAuto = new Auto();
+
+                Console.WriteLine("Anna auton merkki");
+                munAuto.Merkki = Console.ReadLine();
+                Console.WriteLine("Anna nopeus");
+                munAuto.nopeus = int.Parse(Console.ReadLine());
+                Console.WriteLine("Anna renkaiden koko:");
+                munAuto.renkaat = int.Parse(Console.ReadLine());
+
+
+
+                Console.WriteLine("Haluatko tulostaa auton tiedot? 1.Auton tiedot 2.Auton ominaisuudet 3.Lopeta");
+                int a = int.Parse(Console.ReadLine());
+                if (a == 1)
+                {
+                    Console.WriteLine(munAuto.tiedot());
+                }
+                
+            }
+        }
     }
 }
