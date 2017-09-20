@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opiskelija", "Opiskelija\Opiskelija.csproj", "{6A35CA00-2DA6-48C9-A91C-7F38D8DEFD5E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tunnukset", "Tunnukset\Tunnukset.csproj", "{BFDFADC0-ABD1-4E6E-A920-A9E5E0B802E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab3.2", "lab3.2\lab3.2.csproj", "{27444F42-74AF-435B-9EC3-7122892E70B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{BFDFADC0-ABD1-4E6E-A920-A9E5E0B802E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFDFADC0-ABD1-4E6E-A920-A9E5E0B802E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFDFADC0-ABD1-4E6E-A920-A9E5E0B802E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27444F42-74AF-435B-9EC3-7122892E70B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27444F42-74AF-435B-9EC3-7122892E70B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27444F42-74AF-435B-9EC3-7122892E70B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27444F42-74AF-435B-9EC3-7122892E70B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
