@@ -10,18 +10,34 @@ namespace lab3._2
     {
         public static bool OnkoLuku(string syote)
         {
-            if (syote == "testi")
+            if (syote.All(char.IsDigit) || syote.ToLower().Contains(','))
             {
-                Console.WriteLine("Hyvä imbde");
+
+                Console.WriteLine("Syöte on luku");
                 return true;
             }
             else
-            { return false; }
+            {
+                Console.WriteLine("Syöte ei ole luku");
+                return false;
+            }
         }
 
         public static bool OnkoPvm(string syote)
         {
-            return false;
+            string[] format = new string[] { "dd.MM.yyyy" };
+            DateTime dateTime;
+
+            if (DateTime.TryParseExact(syote, format, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.NoCurrentDateDefault, out dateTime))
+                {
+                Console.WriteLine("On päivämäärä");
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("Ei ole päivämäärä");
+                return false;
+            }
         }
     }
 }
