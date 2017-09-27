@@ -10,6 +10,7 @@ namespace lab3._2
     {
         static void Main(string[] args)
         {
+            testaaLuku();
             testaaPvm();
         }
         static void testaaLuku()
