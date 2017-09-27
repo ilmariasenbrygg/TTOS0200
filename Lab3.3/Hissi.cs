@@ -11,7 +11,7 @@ namespace Lab3._3
         private readonly int Maxkerros = 6;
         private readonly int Minkerros = 1;
 
-        public int kerros=1;
+        private int kerros=1;
         public int Kerros
         {
             get

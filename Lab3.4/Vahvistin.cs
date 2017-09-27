@@ -11,7 +11,7 @@ namespace Lab3._4
         private readonly int Maxvolume = 100;
         private readonly int Minvolume = 0;
 
-        public int volume;
+        private int volume;
         public int Volume
         {
             get
