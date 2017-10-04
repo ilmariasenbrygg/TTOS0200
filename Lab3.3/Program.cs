@@ -20,7 +20,7 @@ namespace Lab3._3
             {
                 Console.WriteLine("Anna kerros(1-6)>");
                 hissi.Kerros = int.Parse(Console.ReadLine());
-                Console.WriteLine("Hissi on nyt kerroksessa> " + hissi.kerros);
+                Console.WriteLine("Hissi on nyt kerroksessa> " + hissi.Kerros);
             }
         }
     }

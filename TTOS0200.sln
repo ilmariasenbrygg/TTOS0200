@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello", "Hello\Hello.csproj", "{43D3A9D9-D831-46CD-BE33-1DE6770DB406}"
 EndProject
@@ -28,6 +28,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab4.3", "Lab4.3\Lab4.3.csproj", "{D545811E-E314-458C-8244-FCA9A5FF0B2A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab4.5", "Lab4.5\Lab4.5.csproj", "{76059417-ADF6-4016-8FBC-9E48FF706A20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KapselointiDemo", "Ihanmikähaluan\KapselointiDemo.csproj", "{DD1ACAD3-5C4F-4987-B2BA-40C29F462BEA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{76059417-ADF6-4016-8FBC-9E48FF706A20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76059417-ADF6-4016-8FBC-9E48FF706A20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76059417-ADF6-4016-8FBC-9E48FF706A20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD1ACAD3-5C4F-4987-B2BA-40C29F462BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD1ACAD3-5C4F-4987-B2BA-40C29F462BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD1ACAD3-5C4F-4987-B2BA-40C29F462BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD1ACAD3-5C4F-4987-B2BA-40C29F462BEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
