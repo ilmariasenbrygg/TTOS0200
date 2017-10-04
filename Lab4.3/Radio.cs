@@ -15,9 +15,9 @@ namespace Lab4._3
         private readonly double Maxfrekvenssi = 26000.0;
         private readonly double Minfrekvenssi = 2000.0;
 
-        public double frekvenssi;
-        public int volume;
-        public int virta;
+        private double frekvenssi;
+        private int volume;
+        private int virta;
 
         public bool Käynnistys(int luku)
         {
@@ -57,5 +57,27 @@ namespace Lab4._3
                 return false;
             }
         }
+        public int Virta
+        {
+            get
+            {
+                return virta;
+            }
+        }
+        public int Volume
+        {
+            get
+            {
+                return volume;
+            }
+        }
+        public double Frekvenssi
+        {
+            get
+            {
+                return frekvenssi;
+            }
+        }
+
     }
 }
