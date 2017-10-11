@@ -34,7 +34,9 @@ namespace Lab5._5
                 Console.WriteLine("Kenen");
                 kappale.Kenen = Console.ReadLine();
                 IsännänJaEmännän.sisältö.Add(kappale);
+                Console.WriteLine(IsännänJaEmännän.ToString());
             }
+            
         } 
     }
 }
