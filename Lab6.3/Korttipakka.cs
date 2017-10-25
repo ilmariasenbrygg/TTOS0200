@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab6._3
 {
-    class Korttipakka: Kortti
+    class Korttipakka
     {
         public List<Kortti> Kortit;
 

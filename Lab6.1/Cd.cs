@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab6._1
 {
-    class Cd :Biisi
+    class Cd
     {
         public string Name { get; set; }
         public string Artisti { get; set; }
