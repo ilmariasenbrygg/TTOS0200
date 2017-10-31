@@ -11,57 +11,46 @@ namespace lab8._2
     {
         static void Main(string[] args)
         {
-            int rivit = 0;
-            int nimet = 0;
-            int j = 0;
-            string nimi;
-            string[] nimia = new string[rivit];
             try
             {
-                string polku = @"D:\K1538\Visualstudio\Tekstit\nimet.txt";
+                int a = 0;
+                string polku = @"C:\Users\Ilmari\Visual\nimet.txt";
                 if (!File.Exists(polku))
                 {
-                    Console.WriteLine("Tiedosto on jo olemassa");
+                    
+                    var nameCount = new SortedDictionary<string, int>();
+
+                    foreach (String s in File.ReadAllLines(@"C:\Users\Ilmari\Visual\nimet.txt.txt"))
+                    {
+                        if (nameCount.ContainsKey(s))
+                        {
+                            nameCount[s] = nameCount[s] + 1;
+                            a++;
+                        }
+                        else
+                        {
+                            nameCount.Add(s, 1);
+                            a++;
+                        }
+                    }
+
+                    // and printing
+                    Console.WriteLine("Sisälsi {0} riviä ja {1} nimeä.", a, nameCount.Count);
+                    foreach (var pair in nameCount)
+                    {
+                        Console.WriteLine("{0} count:{1}", pair.Key, pair.Value);
+                    }
                 }
                 else
                 {
-                    string[] lines = System.IO.File.ReadAllLines(polku);
-                    foreach (string line in lines)
-                    {
-                        Console.WriteLine(line);
-                        rivit++;
-                        nimia[j] = line;
-                        j++;
-                         
-                    }
-                    for (int i = 0; i < nimia.Length; i++)
-                    {
-                        if(nimia[i] = )
-                    }
+                    Console.WriteLine("Tiedosto on jo olemassa");
                 }
-                //private static IDictionary<string, int> ParseNameFile(string filename)
-                //{
-                //    var names = new Dictionary<string, int>();
-                //    using (var reader = new StreamReader(filename))
-                //    {
-                //        var line = reader.ReadLine();
-                //        while (line != null)
-                //        {
-                //            if (names.ContainsKey(line))
-                //            {
-                //                names[line]++;
-                //            }
-                //            else
-                //            {
-                //                names.Add(line, 1);
-                //            }
-                //            line = reader.ReadLine();
-                //        }
-                //    }
-                //}
-
             }
-            catch { }
+            catch(FileNotFoundException)
+            {
+                Console.WriteLine("File not found (FileNotFoundException)");
+            }
+            
         }
     }
 }
