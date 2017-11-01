@@ -48,6 +48,10 @@ namespace Lab8._3
             {
                 Console.WriteLine("File not found (FileNotFoundException)");
             }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
