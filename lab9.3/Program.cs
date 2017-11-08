@@ -26,6 +26,7 @@ namespace lab9._3
             Järvi.Kalapaikka = "Jyväsjärvi";
             Järvi.Sijainti = "Keski-Suomi";
             Console.WriteLine("-" + Järvi.ToString());
+            Console.WriteLine("***********************");
 
 
             Console.WriteLine(Matti.ToString() +" kala saalis:");
