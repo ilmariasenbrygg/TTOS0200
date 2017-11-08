@@ -16,14 +16,14 @@ namespace lab9._4
 
         public string Nimi { get; set; }
 
-        public Kuvio()
-        {
+        //public Kuvio()
+        //{
 
-        }
-        public Kuvio(string nimi)
-        {
-            Nimi = nimi;
-        }
+        //}
+        //public Kuvio(string nimi)
+        //{
+        //    Nimi = nimi;
+        //}
         public abstract void Pintaala();
         public abstract void Ympärysmitta();
         
