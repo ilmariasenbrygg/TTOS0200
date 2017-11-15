@@ -54,7 +54,10 @@ namespace lab10._3
             catch (Exception ex)
             {
 
-                pintaala.Text = ex.Message;
+                pintaala.Text = "Syöte on väärin";
+                lasipintaala.Text = "Syötä numeroita";
+                karminpiiri.Text = "Kiitos.";
+                
             }
 
             //double leveys, korkeus, karmi;
