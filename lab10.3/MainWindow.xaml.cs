@@ -33,13 +33,21 @@ namespace lab10._3
 
 
 
-            Pinta = (double.Parse(Leveys.Text) * double.Parse(Korkeus.Text)) / 10;
-            Lpinta = ((double.Parse(Leveys.Text) - (2 * double.Parse(Karmipuu.Text))) * (double.Parse(Korkeus.Text) - (2 * double.Parse(Karmipuu.Text)))) / 10;
-            Kpiiri = ((2 * double.Parse(Leveys.Text)) + (2 * double.Parse(Korkeus.Text))) / 10;
-            pintaala.Text = Pinta.ToString() + " cm^2";
-            lasipintaala.Text = Lpinta.ToString() + " cm^2";
-            karminpiiri.Text = Kpiiri.ToString() + " cm";
+            try
+            {
+                Pinta = (double.Parse(Leveys.Text) * double.Parse(Korkeus.Text)) / 10;
+                Lpinta = ((double.Parse(Leveys.Text) - (2 * double.Parse(Karmipuu.Text))) * (double.Parse(Korkeus.Text) - (2 * double.Parse(Karmipuu.Text)))) / 10;
+                Kpiiri = ((2 * double.Parse(Leveys.Text)) + (2 * double.Parse(Korkeus.Text))) / 10;
+                pintaala.Text = Pinta.ToString() + " cm^2";
+                lasipintaala.Text = Lpinta.ToString() + " cm^2";
+                karminpiiri.Text = Kpiiri.ToString() + " cm";
 
+            }
+            catch (Exception ex)
+            {
+
+                pintaala.Text = ex.Message;
+            }
 
             //double leveys, korkeus, karmi;
 
