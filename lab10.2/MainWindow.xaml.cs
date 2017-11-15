@@ -29,21 +29,48 @@ namespace lab10._2
         double number2;
         private void ostomäärä_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (ostomäärä.Text == null)
+            double luku;
+            if (double.TryParse(ostomäärä.Text, out luku))
             {
-                maksumäärä.Text = 0.ToString();
+                if (Valuutanvalinta.SelectedItem == USD)
+                {
+                    number = double.Parse(ostomäärä.Text);
+                    number2 = number * 0.8997;
+                    maksumäärä.Text = number2.ToString("0.00");
+                }
+                else if (Valuutanvalinta.SelectedItem == EUR)
+                {
+                    number = double.Parse(ostomäärä.Text);
+                    number2 = number / 0.8997;
+                    maksumäärä.Text = number2.ToString("0.00");
+                }
             }
             else
             {
-                number = double.Parse(ostomäärä.Text);
-                number2 = number * 0.8997;
-                maksumäärä.Text = number2.ToString("0.00");
+                maksumäärä.Text = "Ei ole luku";
             }
+        }
+
+      
+
+        private void Valuutanvalinta_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void ComboBoxItem_Selected(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void USD_Selected(object sender, RoutedEventArgs e)
+        {
+
         }
 
         private void maksumäärä_TextChanged(object sender, TextChangedEventArgs e)
         {
-           
+
         }
     }
 }
