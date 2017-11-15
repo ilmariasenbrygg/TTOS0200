@@ -42,6 +42,14 @@ namespace lab10._3
                 lasipintaala.Text = Lpinta.ToString() + " cm^2";
                 karminpiiri.Text = Kpiiri.ToString() + " cm";
 
+
+
+                Ulompi.Height = (double.Parse(Korkeus.Text) / 3000) * 260;
+                Ulompi.Width = (double.Parse(Leveys.Text) / 3000) * 260;
+
+                Sisempi.Height = ((double.Parse(Korkeus.Text) - (2 * (double.Parse(Karmipuu.Text) + 55))) / 3000) * 260;
+                Sisempi.Width = ((double.Parse(Leveys.Text) - (2 * (double.Parse(Karmipuu.Text) + 55))) / 3000) * 260;
+
             }
             catch (Exception ex)
             {
@@ -88,11 +96,7 @@ namespace lab10._3
 
             //Muodon vaihtuvuus
 
-            Ulompi.Height = (double.Parse(Korkeus.Text) / 3000) * 260;
-            Ulompi.Width = (double.Parse(Leveys.Text) / 3000) * 260;
-
-            Sisempi.Height = ((double.Parse(Korkeus.Text)- (2 * (double.Parse(Karmipuu.Text)+55))) / 3000) * 260;
-            Sisempi.Width = ((double.Parse(Leveys.Text) - (2 * (double.Parse(Karmipuu.Text)+55))) / 3000) * 260;
+            
         }
         //  height 260/245  
         //  width 260/245
