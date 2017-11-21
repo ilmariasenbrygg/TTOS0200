@@ -1,0 +1,42 @@
+﻿<Window x:Class="lab11._4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab11._4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="40,173,0,0" TextWrapping="Wrap" Text="Lämpötila" VerticalAlignment="Top"/>
+        <TextBlock Name="Lämp" HorizontalAlignment="Left" Margin="111,173,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="68"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,206,0,0" TextWrapping="Wrap" Text="Kosteus" VerticalAlignment="Top"/>
+        <TextBlock Name="Kosteus" HorizontalAlignment="Left" Margin="112,206,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="67"/>
+        <TextBlock HorizontalAlignment="Left" Margin="40,60,0,0" TextWrapping="Wrap" Text="Kiuas" VerticalAlignment="Top"/>
+        <Button Name="Ykkönen" Content="1" HorizontalAlignment="Left" Margin="224,129,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click"/>
+        <Button Name="Kolmonen" Content="3" HorizontalAlignment="Left" Margin="296,129,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_2"/>
+        <Button Name="Kakkonen" Content="2" HorizontalAlignment="Left" Margin="260,129,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_1"/>
+        <Button Name="Nelonen" Content="4" HorizontalAlignment="Left" Margin="224,153,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_3"/>
+        <Button Name="Kutonen" Content="6" HorizontalAlignment="Left" Margin="296,153,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_5"/>
+        <Button Name="Vitonen" Content="5" HorizontalAlignment="Left" Margin="260,153,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_4"/>
+        <Button Name="Seiska" Content="7" HorizontalAlignment="Left" Margin="224,177,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_7"/>
+        <Button Name="Ysi" Content="9" HorizontalAlignment="Left" Margin="296,177,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_8"/>
+        <Button Name="Kasi" Content="8" HorizontalAlignment="Left" Margin="260,177,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_6"/>
+        <Button Name="Ok" Content="OK" HorizontalAlignment="Left" Margin="335,157,0,0" VerticalAlignment="Top" Width="31" Height="63" RenderTransformOrigin="0.5,0.5" Click="Button_Click_10">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.132"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Name="Piste" Content="." HorizontalAlignment="Left" Margin="296,201,0,0" VerticalAlignment="Top" Width="31" Click="Button_Click_9"/>
+        <Button Name="Pyyhi" Content="Pyyhi" HorizontalAlignment="Left" Margin="332,129,0,0" VerticalAlignment="Top" Width="36" RenderTransformOrigin="0,0.49" Click="Button_Click_11"/>
+        <TextBlock Name="Syöte" HorizontalAlignment="Left" Margin="224,91,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144"/>
+        <Button Name="Nolla" Content="0" HorizontalAlignment="Left" Margin="224,202,0,0" VerticalAlignment="Top" Width="67" Click="Nolla_Click"/>
+        <RadioButton Name="LämpNap" Content="Lämpötila" HorizontalAlignment="Left" Margin="206,241,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton Name="KosteusNap" Content="Kosteus" HorizontalAlignment="Left" Margin="314,241,0,0" VerticalAlignment="Top" Checked="KosteusNap_Checked"/>
+
+    </Grid>
+</Window>
