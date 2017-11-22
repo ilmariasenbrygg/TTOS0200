@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOdemot", "OOdemot\OOdemot.csproj", "{647E5B70-F18B-4837-8A73-4FCAFA7B4CB9}"
 EndProject
@@ -84,6 +84,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab11.4", "lab11.4\lab11.4.csproj", "{0BA89976-C6C0-4DC6-B7C9-CCCBD1EE0C9A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab11.2", "Lab11.2\Lab11.2.csproj", "{57589445-EC82-4520-9FB9-5915C230460A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kertaustehtävä", "Kertaustehtävä\Kertaustehtävä.csproj", "{0B5C98E9-96E9-4D93-9FFF-F603663DE023}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -255,6 +257,10 @@ Global
 		{57589445-EC82-4520-9FB9-5915C230460A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57589445-EC82-4520-9FB9-5915C230460A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57589445-EC82-4520-9FB9-5915C230460A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B5C98E9-96E9-4D93-9FFF-F603663DE023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B5C98E9-96E9-4D93-9FFF-F603663DE023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B5C98E9-96E9-4D93-9FFF-F603663DE023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B5C98E9-96E9-4D93-9FFF-F603663DE023}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
