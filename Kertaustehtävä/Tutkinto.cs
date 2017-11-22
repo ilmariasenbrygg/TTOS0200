@@ -18,11 +18,13 @@ namespace Kertaustehtävä
         }
         public override string ToString()
         {
+            
             string retval = Name + " sisältö\n"; 
             foreach (Opintojakso item in TK)
             {
                 retval += item.ToString() + "\n";
             }
+            retval += "\n##########################################################";
             return retval;
         }
     }

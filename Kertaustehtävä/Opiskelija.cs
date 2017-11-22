@@ -10,12 +10,16 @@ namespace Kertaustehtävä
     {
         string Nimi { get; set; }
         int Ikä { get; set; }
-        private static int opiskelijoidenlkm = 0;
+        public static int opiskelijoidenlkm = 0;
         public Opiskelija(string nimi, int ikä)
         {
             Nimi = nimi;
             Ikä = ikä;
             opiskelijoidenlkm++;
+        }
+        public static int Montako()
+        {
+            return opiskelijoidenlkm;
         }
 
         public override string ToString()

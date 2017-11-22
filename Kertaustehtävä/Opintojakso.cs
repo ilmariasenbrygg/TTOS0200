@@ -11,6 +11,7 @@ namespace Kertaustehtävä
         string Nimi { get; set; }
         public List<Opiskelija> OP;
         public List<Opettaja> OPE;
+        int määrä = 0;
 
 
         public Opintojakso(string nimi)
@@ -26,12 +27,16 @@ namespace Kertaustehtävä
             foreach (Opiskelija item in OP)
             {
                 retval += item.ToString() + "\n";
+                määrä++;
             }
-            retval += "*****Opettaja*****\n";
+            retval += "\nOpiskelijoita: " + määrä.ToString();
+            retval += "\n*****Opettaja*****\n";
             foreach (Opettaja item in OPE)
             {
                 retval += item.ToString() + "\n";
             }
+            retval += "\n ------------------------------------------------------------";
+            
             return retval;
         }
 
