@@ -19,6 +19,8 @@
         <Button Content="Tyhjennä" HorizontalAlignment="Left" Margin="196,155,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
         <TextBlock HorizontalAlignment="Left" Margin="315,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Arvotut rivit"/><Run Text=":"/></TextBlock>
         <TextBlock Name="Rivit" HorizontalAlignment="Left" Margin="315,72,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="239" Width="193" ScrollViewer.CanContentScroll="True"/>
+        <TextBox Name="Virhe" HorizontalAlignment="Left" Height="59" Margin="55,250,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="128"/>
+        <TextBox HorizontalAlignment="Left" Height="16" Margin="55,229,0,0" TextWrapping="Wrap" Text="Virheilmoitus" VerticalAlignment="Top" Width="107" TextChanged="TextBox_TextChanged"/>
 
     </Grid>
 </Window>

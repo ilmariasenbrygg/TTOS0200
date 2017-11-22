@@ -37,6 +37,7 @@
         <Button Name="Nolla" Content="0" HorizontalAlignment="Left" Margin="224,202,0,0" VerticalAlignment="Top" Width="67" Click="Nolla_Click"/>
         <RadioButton Name="LämpNap" Content="Lämpötila" HorizontalAlignment="Left" Margin="206,241,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
         <RadioButton Name="KosteusNap" Content="Kosteus" HorizontalAlignment="Left" Margin="314,241,0,0" VerticalAlignment="Top" Checked="KosteusNap_Checked"/>
+        <TextBlock x:Name="Virhe" HorizontalAlignment="Left" Margin="29,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="53" Width="185"><Run Text="Tapahtui virhe"/><Run Text="? Lue Minut."/></TextBlock>
 
     </Grid>
 </Window>

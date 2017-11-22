@@ -77,29 +77,40 @@ namespace lab11._4
 
         private void Button_Click_10(object sender, RoutedEventArgs e)
         {
-            if(LämpNap.IsChecked == true)
+            try
             {
-                if(float.Parse(Syöte.Text) < 120 && float.Parse(Syöte.Text) > 0)
+
+
+
+                if (LämpNap.IsChecked == true)
                 {
-                    Lämp.Text = Syöte.Text;
+                    if (float.Parse(Syöte.Text) < 120 && float.Parse(Syöte.Text) > 0)
+                    {
+                        Lämp.Text = Syöte.Text;
+                    }
+                    else
+                    {
+                        Lämp.Text = "Syötä 0-100";
+                    }
                 }
-                else
+                if (KosteusNap.IsChecked == true)
                 {
-                    Lämp.Text = "Syötä 0-100";
+                    if (float.Parse(Syöte.Text) < 100 && float.Parse(Syöte.Text) > 0)
+                    {
+                        Kosteus.Text = Syöte.Text;
+                    }
+                    else
+                    {
+                        Kosteus.Text = "Syötä 0-120";
+                    }
                 }
             }
-            if (KosteusNap.IsChecked == true)
+            catch (Exception ex)
             {
-                if (float.Parse(Syöte.Text) < 100 && float.Parse(Syöte.Text) > 0)
-                {
-                    Kosteus.Text = Syöte.Text;
-                }
-                else
-                {
-                    Kosteus.Text = "Syötä 0-120";
-                }
+
+                Virhe.Text += "\n"+ ex.Message;
             }
-            
+
         }
 
         private void Button_Click_11(object sender, RoutedEventArgs e)

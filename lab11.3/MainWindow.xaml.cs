@@ -28,13 +28,19 @@ namespace lab11._3
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            try
+            {
+
+            
+
+
             int osumat;
             int nro;
             string rivi;
             Random rnd = new Random();
             if (Combo.SelectedItem == Lotto)
             {
-              
+
                 for (int i = 0; i < int.Parse(Määrä.Text); i++)
                 {
                     bool[] numerot = new bool[40];
@@ -119,7 +125,7 @@ namespace lab11._3
                     {
                         if (lisä[k])
                         {
-                            lisät += k.ToString() +",";
+                            lisät += k.ToString() + ",";
                         }
                     }
                     //string lisät = lisä[0].ToString() + lisä[1].ToString();
@@ -135,6 +141,12 @@ namespace lab11._3
                     rivi += "+" + lisät;
                     Rivit.Text += rivi + "\n";
                 }
+            }
+        }
+            catch (Exception ex)
+            {
+
+                Virhe.Text = ex.Message;
             }
         }
 
@@ -161,6 +173,11 @@ namespace lab11._3
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
         }
     }
 }
